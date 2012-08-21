@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>注册 </title>
+		<link type="text/css" rel="stylesheet" href="../css/bg.css">
+		<link type="text/css" rel="stylesheet" href="../css/regist.css">
+		<script src="../javascript/register.js"></script>
+	</head>
+ <body background="../image/登录背景.jpg">
+	<div class="header">
+        	<div class="logo"></div>
+			<div id="inf" class="inf"></div>
+		</div>
+	<div class="bar">
+		<div id="word"></div>
+		</div>
+	<div class="content1">
+	<div class="content2">
+	<div class="content">
+		<form action="checkregist.php" method="post" id="regist">
+			<div>
+				<label class="label">用户名</label>
+				<input type="text" name="name" class="input"/>
+				</div>
+			<div>
+				<label class="label">密码</label>
+				<input type="password" name="password" class="input"/>
+				</div>
+			<div>
+				<label class="label"> 确认密码</label>
+				<input type="password" name="cpassword" class="input"/>
+				</div>
+			<div>
+				<label class="label"> 邮箱</label>
+				<input type="text" name="email" class="input"/>
+				</div>
+			<div>
+				<label class="label"> 验证码</label>
+				<input type="text" name="vcode" class="input_confirm"/>
+                <img src='vcode.php' id="imgId" onClick="this.src=this.src+'?'" alt="看不清,换一张"  />
+                <label class="label3">点击图片刷新</label>
+			</div>
+			<div id="check">
+				<input type="checkbox" name="checkbox" />
+				<span id="checkword">我已阅读并同意</span>
+				<a href="" title="服务条款" target="_blank">《XX服务条款》</a>
+				</div>
+			<div id="button">
+				<input type="button" value="注册"  onclick="check()"  class="confirm"/>
+				</div>
+			</form>
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

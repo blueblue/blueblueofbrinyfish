@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>注册 </title>
+		<link type="text/css" rel="stylesheet" href="../css/bg.css">
+        <link type="text/css" rel="stylesheet" href="../css/dao_style.css" />
+		<link type="text/css" rel="stylesheet" href="../css/creatloanGroup.css">
+		<script src="../javascript/register.js"></script>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+	</head>
+ <body style="background:url(../image/background.jpg) no-repeat">
+	<div class="header">
+        	<div class="logo"><img src="../image/创建联贷团.png"></div>
+			<div id="inf" class="inf"><a href="basicInf.php?="+ title="个人信息" name=""><label class="lable1">Hi~咸鱼王股份有限公司</label></a></div>
+		</div>
+	<div class="bar">
+		<ul class="bar_menu">
+    
+            <li><a href="#">联贷团</a>
+                <ul>
+                    <li><a href="createloanGroup.html">创建联贷团</a></li>
+                    <li><a href="#">登录联贷团</a></li>
+                </ul>
+            </li>
+            <li><a href="notice.html">查看通知</a></li>
+            <li><a href="#">个人资料</a>
+        
+                <ul>
+                    <li><a href="basicInfw.html" class="documents">个人信息</a></li>
+                    <li><a href="#" class="messages">修改密码</a></li>
+                </ul>
+        
+            </li>
+    
+    	</ul> <!-- end .menu -->
+	</div>
+	<div class="content1">
+	  <div class="content2">	
+	   <div class="content">
+		<form action="" method="post" id="form_1">
+			<div>
+				<label class="label"> 联贷团名称</label>
+				<input type="text" name="name" class="input"/>
+			</div>
+			<div>
+				<label class="label"> 所在商业圈</label>
+                    <select id="city" name="city" onchange="getcluster(this.value)">
+                        <option value="guangzhou">广州市</option>
+                        <option value="shenzhen">深圳市</option>
+                        <option value="zhuhai">珠海市</option>
+                        <option value="shantou">汕头市</option>
+                        <option value="shaoguang">韶光市</option>
+                        <option value="foshan">佛山市</option>
+                        <option value="jiangmen">江门市</option>
+                        <option value="zhanjiang">湛江市</option>
+                        <option value="maoming">茂名市</option>
+                        <option value="zhaoqing">肇庆市</option>
+                        <option value="huizhou">惠州市</option>
+                        <option value="meizhou">梅州市</option>
+                        <option value="shanwei">汕尾市</option>
+                        <option value="heyuan">河源市</option>
+                        <option value="yangjiang">阳江市</option>
+                        <option value="qingyuan">清远市</option>
+                        <option value="dongguan">东莞市</option>
+                        <option value="zhongshan">中山市</option>
+                        <option value="chaozhou">潮州市</option>
+                        <option value="jieyang">揭阳市</option>
+                        <option value="yunfu">云浮市</option>
+                    </select>
+                    <select id="cluster" name="cluster">
+                        <option value="">商业圈</option>
+                    </select>
+			</div>
+			<div>
+				<label class="label"> 企业数量</label>
+				<select name="sum_of_enterprise" class="number">
+                	<option value="sum_2" class="number1">2</option>
+                    <option value="sum_3" class="number1">3</option>
+                    <option value="sum_4" class="number1">4</option>
+                    <option value="sum_5" class="number1">5</option>
+                    <option value="sum_6" class="number1">6</option>
+                </select>
+			</div>
+			<div>
+				<label class="label"> 密码</label>
+				<input type="password" name="password" class="input"/>
+			</div>
+			<div>
+				<label class="label"> 确认密码</label>
+				<input type="password" name="cpassword" class="input"/>
+			</div>
+			<div id="button">
+				<input type="button" value="创建"  onclick="check()" class="create"/>
+			</div>
+		</form>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

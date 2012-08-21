@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dlabel XHTML 1.0 divansitional//EN" "http://www.w3.org/div/xhtml1/Dlabel/xhtml1-divansitional.dlabel">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>无标题文档</title>
+		<link type="text/css" rel="stylesheet" href="../css/bg.css" />
+		<link type="text/css" rel="stylesheet" href="../css/basicInf.css" />
+        <link type="text/css" rel="stylesheet" href="../css/dao_style.css" />
+        <script src="../javascript/basicInf.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+	</head>
+
+	<body style=“ background="../image/background.jpg"”>
+		<div class="header">
+        	<div class="logo"><img src="../image/企业基本信息.png"></div>
+			<div id="inf" class="inf"><a href="basicInf.php?="+ title="个人信息" name=""><label class="label1">Hi~咸鱼王股份有限公司</label></a></div>
+		</div>
+        <div id="bar" class="bar">
+        	<ul class="bar_menu">
+    
+                <li class="firstlead"><a href="#">联贷团</a>
+                	<ul>
+                    	<li><a href="createloanGroup.html">创建联贷团</a></li>
+                        <li><a href="#">登录联贷团</a></li>
+                    </ul>
+                </li>
+                <li><a href="notice.html">查看通知</a></li>
+                <li><a href="#">个人资料</a>
+            
+                    <ul>
+                        <li><a href="basicInfw.html" class="documents">个人信息</a></li>
+                        <li><a href="#" class="messages">修改密码</a></li>
+                    </ul>
+            
+                </li>
+    
+    		</ul> <!-- end .menu -->
+        </div>
+		<div class="content1">
+		  <div class="content2">
+			<div class="content">
+				<form action="" id="finformation" method="post">
+						<div>
+							<label class="label2">企业名称</label>
+							<input type="text" name="e_name" class="input2" readonly="readonly"/>
+						</div>
+						<div>
+							<label class="label2">企业地址</label>
+							<input type="text" name="e_address" class="input2" readonly="readonly"/>
+						</div>
+						<div>
+							<label class="label2">所属集群圈</label>
+								<select id="city" name="city" onchange="getcluster(this.value)" disabled="disabled">
+									<option value="guangzhou">广州市</option>
+									<option value="shenzhen">深圳市</option>
+									<option value="zhuhai">珠海市</option>
+									<option value="shantou">汕头市</option>
+									<option value="shaoguang">韶光市</option>
+									<option value="foshan">佛山市</option>
+									<option value="jiangmen">江门市</option>
+									<option value="zhanjiang">湛江市</option>
+									<option value="maoming">茂名市</option>
+									<option value="zhaoqing">肇庆市</option>
+									<option value="huizhou">惠州市</option>
+									<option value="meizhou">梅州市</option>
+									<option value="shanwei">汕尾市</option>
+									<option value="heyuan">河源市</option>
+									<option value="yangjiang">阳江市</option>
+									<option value="qingyuan">清远市</option>
+									<option value="dongguan">东莞市</option>
+									<option value="zhongshan">中山市</option>
+									<option value="chaozhou">潮州市</option>
+									<option value="jieyang">揭阳市</option>
+									<option value="yunfu">云浮市</option>
+								</select>
+								<select id="cluster" name="cluster" disabled="disabled">
+									<option value="">商业圈</option>
+								</select>
+						</div>
+                        <div>
+							<label class="label2">经营期限</label>
+							<input type="text" name="e_period" class="input2" readonly="readonly"/>
+						</div>
+						<div>
+							<label class="label2">企业所有人姓名</label>
+							<input type="text" name="f_name" class="input2" readonly="readonly"/>
+						</div>
+                        <div>
+							<label class="label2">居民身份证</label>
+							<input type="text" name="id number" class="input2" readonly="readonly"/>
+                        </div>
+						<div>
+							<label class="label2">联系人手机</label>
+							<input type="text" name="c_mobile" class="input2" readonly="readonly"/>
+						</div>
+						<div>
+							<label class="label2">联系人固定电话</label>
+							<input type="text" name="c_phone" class="input2" readonly="readonly"/>
+						</div>
+						<div class="save">
+							<input type="button" onclick="alter()" value="修改" id="save" />
+						</div>
+				</form>
+		  </div>
+		  </div>
+		</div>
+	</body>
+</html>

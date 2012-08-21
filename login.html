@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>无标题文档</title>
+		<link type="text/css" rel="stylesheet" href="../css/login.css" />
+        <script src="../javascript/login.js"></script>
+	</head>
+
+<body style="background-image:url(../image/登录背景.jpg)">
+	<div id="main" style="background-image:url(../image/登录.png)">
+		<div id="login" >
+        	<p></p>
+            <p></p>
+			<form action="" id="loginform" method="post">
+				<table>
+					<tr>
+						<td id="tdr">账户</td>
+						<td><input type="text" name="name" class="input"/></td>
+						<td><a href="register.html" title="注册账户"><label id="word">注册</label></a></td>
+					</tr>
+					<tr>
+						<td id="tdr">密码</td>
+						<td><input type="password" name="secret" class="input"/></td>
+						<td><a href="#" title="取回密码" onclick="findpw()"><label class="word">忘记密码</label></a></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+                        <td id="tdb"><input type="button" value="登录" onclick="check()" class="check" style="background:url(../image/大按钮.png)"/></td>
+					</tr>
+			    </table>
+			</form>
+		</div>
+		<div id="footer">
+			Blueblue@Brinyfish团队 版权所有（建议使用火狐浏览器访问本系统）<br />
+			<a href="" target="_blank" title="咸鱼团队的介绍">关于我们</a>
+			<a href="" title="本系统帮助手册下载">帮助手册下载</a>
+		</div>
+	</div>
+	 <div id="alert" style="background-image:url(../image/对话框.png)">
+        <form action="" id="alertform" actlion="#" method="post">
+			   <div class="alerthead">
+                	<div class="ftip1"><label>找回密码</label></div>
+					<div class="close"><img  src="../image/del.png" onclick="aclose()" ></div>
+				</div>
+            	<div>
+                	<label class="label">账号</label>
+					<input type="text" name="fname" class="input1"/>
+               </div>
+			   <div>
+                	<label class="label">邮箱</label>
+					<input type="text" name="femail" class="input1"/>
+               </div>
+			   <div class="tijiao"><input type="button" name="fsubmit" onclick="fcheck()" value="提交"  class="reset"><span>&nbsp;</span><input type="reset" name="freset" value="重置" class="reset"/></div>
+       </form>
+	   </div>
+</body>
+</html>
